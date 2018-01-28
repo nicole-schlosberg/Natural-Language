@@ -59,6 +59,8 @@ corpus <- tm_map(corpus, removeNumbers, lazy=TRUE)
 corpus <- tm_map(corpus, removePunctuation, lazy=TRUE)
 ```
 
+What processing steps have you conducted here? Why is this important? Are there any other steps you should take to process your text before analyzing?
+
 #### Create a Term Document Matrix
 ```{r}
 #Convert corpus to a term document matrix - so each word can be analyzed individuallly
