@@ -26,6 +26,7 @@ In this unit you will completing three main tasks. Processing a set of documents
 
 [Knispelis, A. (2016). LDA Topic Models.](https://www.youtube.com/watch?v=3mHy4OSyRf0)
 
+[Jurafsky, D. & Manning, C. (2016). What is Sentiment Analysis? Stanford: Palo Alto, CA](https://www.youtube.com/watch?v=sxPBv4Skj98)
 
 ## Knowledge Check
 Once you have completed all tasks in the unit, please complete the [knowledge check]().
