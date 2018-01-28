@@ -24,7 +24,7 @@ In this unit you will completing three main tasks. Processing a set of documents
 
 [Crash Course. (2017). Natural Language Processing.](https://www.youtube.com/watch?v=fOvTtapxa9c)
 
-[Knispelis, A. (2016).LDA Topic Models.](https://www.youtube.com/watch?v=3mHy4OSyRf0)
+[Knispelis, A. (2016). LDA Topic Models.](https://www.youtube.com/watch?v=3mHy4OSyRf0)
 
 
 ## Knowledge Check
