@@ -31,17 +31,39 @@ D1 <- do.call("rbind", lapply(file.list, read.csv, header = TRUE, stringsAsFacto
 D2 <- read.csv("~/YOUR FILE PATH/week-list.csv", header = TRUE)
 ```
 
-## Clean the htlm tags from your text
+## Step 1 - Clean the htlm tags from your text
 ```{r}
-
+D1$Notes2 <- gsub("<.*?>", "", D1$Notes)
+D1$Notes2 <- gsub("nbsp", "" , D1$Notes2)
+D1$Notes2 <- gsub("nbspnbspnbsp", "" , D1$Notes2)
 ```
 
-## Merge with week list so you have a variable representing weeks for each entry 
+## Step 2 - Process text using the tm package
 ```{r}
+#Convert the data frame to the corpus format that the tm package uses
+corpus <- Corpus(VectorSource(D1$Notes2))
+#Remove spaces
+corpus <- tm_map(corpus, stripWhitespace)
+#Convert to lower case
+corpus <- tm_map(corpus, tolower)
+#Remove pre-defined stop words ('the', 'a', etc)
+corpus <- tm_map(corpus, removeWords, stopwords('english'))
+#Convert words to stems ("education" = "edu") for analysis, for more info see  http://tartarus.org/~martin/PorterStemmer/
+corpus <- tm_map(corpus, stemDocument)
+#Remove numbers
+corpus <- tm_map(corpus, removeNumbers)
+#remove punctuation
+corpus <- tm_map(corpus, removePunctuation)
+#Convert to plain text for mapping by wordcloud package
+corpus <- tm_map(corpus, PlainTextDocument, lazy = TRUE)
 
+#Convert corpus to a term document matrix - so each word can be analyzed individuallly
+tdm.corpus <- TermDocumentMatrix(corpus)
+
+#Note: we won't remove plural words here, plural words in English tend to be highly irregular and difficult to extract reliably
 ```
 
-## Process text using the tm package - Code has been altered to account for changes in the tm package
+## Alternative processing - Code has been altered to account for changes in the tm package
 ```{r}
 #Convert the data frame to the corpus format that the tm package uses
 corpus <- Corpus(VectorSource(D1$Notes2))
@@ -61,7 +83,33 @@ corpus <- tm_map(corpus, removePunctuation, lazy=TRUE)
 
 What processing steps have you conducted here? Why is this important? Are there any other steps you should take to process your text before analyzing?
 
-#### Create a Term Document Matrix
+## Step 3 - Find common words
+```{r}
+#The tm package can do some simple analysis, like find the most common words
+findFreqTerms(tdm.corpus, lowfreq=50, highfreq=Inf)
+#We can also create a vector of the word frequencies
+word.count <- sort(rowSums(as.matrix(tdm.corpus)), decreasing=TRUE)
+word.count <- data.frame(word.count)
+```
+
+## Generate a Word Cloud
+
+### ColorBrewer
+ColorBrewer is a useful tool to help you choose colors for visualizations that was originally built for cartographers. On the ColorBrewer website (http://colorbrewer2.org/#) you can test different color schemes or see what their preset color schemes look like. This is very useful, especially if you are making images for colorblind individuals. 
+```{r}
+#Define the colors the cloud will use
+col=brewer.pal(6,"Dark2")
+#Generate cloud
+wordcloud(corpus, min.freq=80, scale=c(5,2),rot.per = 0.25,
+          random.color=T, max.word=45, random.order=F,colors=col)
+```
+
+## Merge with week list so you have a variable representing weeks for each entry 
+```{r}
+
+```
+
+### Create a Term Document Matrix
 ```{r}
 #Convert corpus to a term document matrix - so each word can be analyzed individuallly
 tdm.corpus <- TermDocumentMatrix(corpus)
