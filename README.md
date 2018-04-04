@@ -24,11 +24,15 @@ In this unit you will completing three main tasks. Processing a set of documents
 
 [Crash Course. (2017). Natural Language Processing.](https://www.youtube.com/watch?v=fOvTtapxa9c)
 
-[Jurafsky, D. & Manning, C. (2016). What is Sentiment Analysis? Stanford: Palo Alto, CA](https://www.youtube.com/watch?v=sxPBv4Skj98)
+[Raval, S. (2016). Sentiment Analysis in 4 Minutes.](https://www.youtube.com/watch?v=AJVP96tAWxw)
+
 [Knispelis, A. (2016). LDA Topic Models.](https://www.youtube.com/watch?v=3mHy4OSyRf0)
 
+~~[Jurafsky, D. & Manning, C. (2016). What is Sentiment Analysis? Stanford: Palo Alto, CA](https://www.youtube.com/watch?v=sxPBv4Skj98)
+[Knispelis, A. (2016). LDA Topic Models.](https://www.youtube.com/watch?v=3mHy4OSyRf0)~~ 
+
 ## Knowledge Check
-Once you have completed all tasks in the unit, please complete the [knowledge check]().
+Once you have completed all tasks in the unit, please complete the [knowledge check](https://tccolumbia.qualtrics.com/jfe/form/SV_e4E7uZmOWFjhIwJ).
 
 ## Additional Materials
 
