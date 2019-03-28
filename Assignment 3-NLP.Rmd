@@ -26,7 +26,7 @@ Sys.setlocale("LC_ALL", "C")
 #Create a list of all the files
 file.list <- list.files(path="~/YOUR FILE PATH", pattern=".csv")
 #Loop over file list importing them and binding them together
-D1 <- do.call("rbind", lapply(file.list, read.csv, header = TRUE, stringsAsFactors = FALSE))
+D1 <- do.call("rbind", lapply(grep(".csv", file.list, value = TRUE), read.csv, header = TRUE, stringsAsFactors = FALSE))
 
 D2 <- read.csv("~/YOUR FILE PATH/week-list.csv", header = TRUE)
 ```
@@ -41,7 +41,7 @@ D1$Notes2 <- gsub("nbspnbspnbsp", "" , D1$Notes2)
 ## Step 2 - Process text using the tm package
 ```{r}
 #Convert the data frame to the corpus format that the tm package uses
-corpus <- Corpus(VectorSource(D1$Notes2))
+corpus <- VCorpus(VectorSource(D1$Notes2))
 #Remove spaces
 corpus <- tm_map(corpus, stripWhitespace)
 #Convert to lower case
