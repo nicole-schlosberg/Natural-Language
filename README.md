@@ -16,6 +16,10 @@ In this unit you will completing three main tasks. Processing a set of documents
 
 ### Videos
 
+[![Introduction to NLP](https://img.youtube.com/vi/x54ULLJSzBM/0.jpg)](https://youtu.be/x54ULLJSzBM)
+
+[Video Slide Deck](https://github.com/la-process-and-theory/natural-language-processing/blob/master/nlp-slides.pdf)
+
 [Crash Course. (2017). Natural Language Processing.](https://www.youtube.com/watch?v=fOvTtapxa9c)
 
 [Raval, S. (2016). Sentiment Analysis in 4 Minutes.](https://www.youtube.com/watch?v=AJVP96tAWxw)
