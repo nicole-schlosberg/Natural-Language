@@ -1,8 +1,6 @@
 ---
 title: "NLP"
 author: "Charles Lang"
-date: "2/23/2017"
-output: html_document
 ---
 
 ## Libraries
