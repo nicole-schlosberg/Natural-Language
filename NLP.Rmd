@@ -139,13 +139,13 @@ dtm.tfi2   <- dtm.tfi[rowTotals> 0, ] #Divide by sum across rows
 which(rowTotals %in% c(0))
 
 #Remove these rows from original dataset
-D1 <- D1[-c(?,?),]
+#D1 <- D1[-c(?,?),]
 
 #Generate LDA model, k is the number of topics and the seed is a random number to start the process
 lda.model = LDA(dtm.tfi, k = 5, seed = 150)
 
 #Which terms are most common in each topic
-terms(lda.model, k = 10)
+terms(lda.model, k = 10) 
 
 #Identify which documents belong to which topics based on the notes taken by the student
 D1$topic <- topics(lda.model)
@@ -154,10 +154,7 @@ D1$topic <- topics(lda.model)
 
 What does an LDA topic represent? 
 
-# Main Task 
+# Final Task 
 
-Your task is to generate a *single* visualization showing: 
-
-- Sentiment for each week and 
-- One important topic for that week
+Find a set of documents, perhaps essays you have written or articles you have available and complete an LDA analysis of those documents. Does the method group documents as you would expect?
 
