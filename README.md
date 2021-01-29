@@ -16,7 +16,7 @@ In this unit you will completing three main tasks. Processing a set of documents
 
 ### Videos
 
-[![Introduction to NLP](https://img.youtube.com/vi/x54ULLJSzBM/0.jpg)](https://youtu.be/x54ULLJSzBM)
+[![Introduction to NLP](https://img.youtube.com/vi/MKUcElLffTg/0.jpg)](https://youtu.be/MKUcElLffTg)
 
 [Video Slide Deck](https://github.com/la-process-and-theory/natural-language-processing/blob/master/nlp-slides.pdf)
 
