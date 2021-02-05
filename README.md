@@ -35,7 +35,7 @@ In this unit you will completing three main tasks. Processing a set of documents
 * [McNamara, D. S., Crossley, S. A., & Roscoe, R. (2013). Natural Language Processing in an Intelligent Writing Strategy Tutoring System. Behavior Research Methods, 45(2), 499–515.](http://link.springer.com.ezproxy.cul.columbia.edu/article/10.3758/s13428-012-0258-1)
 
 ## Knowledge Check
-Once you have completed all tasks in the unit, please complete the [knowledge check](https://tccolumbia.qualtrics.com/jfe/form/SV_bIchFX8s5M3Fdml).
+Once you have completed all tasks in the unit, please complete the [knowledge check](https://tccolumbia.qualtrics.com/jfe/form/SV_eJ0QJWNsklHsdro).
 
 ## Additional Materials
 
