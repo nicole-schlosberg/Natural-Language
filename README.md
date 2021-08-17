@@ -6,7 +6,7 @@ The use of natural language processing has exploded over the last decade. Appilc
 * Ran a sentiment analysis of thise documents. 
 * Generated a topic models of those documents. 
 
-## Goals for this unit
+## Goals
 
 * Understand and apply the basic process of natural language proceessing and the role of pre-processing text
 * Understand and apply a simple sentiment analysis to a set of documents
