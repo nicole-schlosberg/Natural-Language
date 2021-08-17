@@ -8,11 +8,13 @@ The use of natural language processing has exploded over the last decade. Appilc
 * Understand and apply a simple sentiment analysis to a set of documents
 * Understand and apply a latent dirichlet allocation to a set of documents
 
-## Tasks for this unit
+## Completed the following
 
-In this unit you will completing three main tasks. Processing a set of documents, running a sentiment analysis of thise documents and then generating topic models of those documents. The documents we will be using will be student notes that the class HUDK4050 made last semester. As background to this task please read over the follwing materials and watch the methodological videos. If you find any other useful materials please add them under Additional Materials at the end of the this page and pull request the change back to this repo.
+* Processed a set of documents of student notes that the class HUDK4050 made last semester. 
+* Ran a sentiment analysis of thise documents 
+* Generated a topic models of those documents. 
 
-## Resources
+## Utilized the following resources
 
 ### Videos
 
