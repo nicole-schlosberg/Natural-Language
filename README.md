@@ -14,8 +14,6 @@ The use of natural language processing has exploded over the last decade. Appilc
 
 ## Utilized the following resources
 
-### Videos
-
 [![Introduction to NLP](https://img.youtube.com/vi/MKUcElLffTg/0.jpg)](https://youtu.be/MKUcElLffTg)
 
 [Video Slide Deck](https://github.com/la-process-and-theory/natural-language-processing/blob/master/nlp-slides.pdf)
@@ -25,8 +23,6 @@ The use of natural language processing has exploded over the last decade. Appilc
 [Raval, S. (2016). Sentiment Analysis in 4 Minutes.](https://www.youtube.com/watch?v=AJVP96tAWxw)
 
 [Knispelis, A. (2016). LDA Topic Models.](https://www.youtube.com/watch?v=3mHy4OSyRf0)
-
-### Readings
 
 [Nadkarni, P. M., Ohno-Machado, L., & Chapman, W. W. (2011). Natural language processing: An Introduction. Journal of the American Medical Informatics Association: JAMIA, 18(5), 544–551.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3168328/)
 
